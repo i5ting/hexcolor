@@ -1,7 +1,14 @@
 'use strict'
 
+function decToHex(number){
+    return (parseInt(number,10) >>> 0).toString(16).toLocaleUpperCase()
+}
+
 function getColor(number) {
-    let color = number
+    let color = decToHex(number)
+    
+    console.log(color)
+    
     const blue = parseInt(color % 0x100, 10)
     color = color >>> 8
     const green = parseInt(color % 0x100, 10)

@@ -1,4 +1,4 @@
 'use strict'
 
-var hexColor = require('.')(7829368)
+var hexColor = require('.')(-16776961)
 console.log(hexColor)
